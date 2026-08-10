@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "spec",
+  "id": "spc:token-revocation-expiration-and-cache-contract",
+  "number": 2002,
+  "slug": "token-revocation-expiration-and-cache-contract",
+  "title": "Token Revocation Expiration And Cache Contract",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "summary": "Defines token expiration, revocation, and validation-cache behavior.",
+  "body": "## Requirements\n\n- Never accept expired or explicitly revoked tokens.\n- Bound cached validation by token lifetime and revocation risk.\n- Invalidate affected cache entries on known compromise.",
+  "decision_date": "2026-08-10",
+  "references": [
+    "https://www.rfc-editor.org/rfc/rfc9068",
+    "https://www.rfc-editor.org/rfc/rfc7662",
+    "https://www.rfc-editor.org/rfc/rfc9449",
+    "https://www.rfc-editor.org/rfc/rfc8705"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [],
+  "tags": [
+    "access-token",
+    "jwt",
+    "introspection",
+    "dpop",
+    "mtls"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:resource-servers-own-access-token-validation",
+    "adr:token-claims-are-validated-authority-inputs-not-permissions",
+    "adr:sender-constrained-token-policy-is-explicit"
+  ]
+}

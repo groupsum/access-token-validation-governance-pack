@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "adr",
+  "id": "adr:sender-constrained-token-policy-is-explicit",
+  "number": 1002,
+  "slug": "sender-constrained-token-policy-is-explicit",
+  "title": "Sender Constrained Token Policy Is Explicit",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "summary": "mTLS and DPoP sender constraints are applied through explicit profiles.",
+  "body": "mTLS and DPoP sender constraints are applied through explicit profiles.",
+  "decision_date": "2026-08-10",
+  "references": [
+    "https://www.rfc-editor.org/rfc/rfc9068",
+    "https://www.rfc-editor.org/rfc/rfc7662",
+    "https://www.rfc-editor.org/rfc/rfc9449",
+    "https://www.rfc-editor.org/rfc/rfc8705"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [],
+  "tags": [
+    "access-token",
+    "jwt",
+    "introspection",
+    "dpop",
+    "mtls"
+  ]
+}

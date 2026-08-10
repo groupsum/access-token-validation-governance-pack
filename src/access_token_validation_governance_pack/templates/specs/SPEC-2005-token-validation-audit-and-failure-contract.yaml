@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "spec",
+  "id": "spc:token-validation-audit-and-failure-contract",
+  "number": 2005,
+  "slug": "token-validation-audit-and-failure-contract",
+  "title": "Token Validation Audit And Failure Contract",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "summary": "Defines validation failures, safe responses, metrics, and evidence.",
+  "body": "## Requirements\n\n- Distinguish missing, malformed, expired, inactive, wrong-audience, and sender-mismatch failures internally.\n- Return non-sensitive protocol-appropriate errors.\n- Record validation outcome without logging reusable tokens.",
+  "decision_date": "2026-08-10",
+  "references": [
+    "https://www.rfc-editor.org/rfc/rfc9068",
+    "https://www.rfc-editor.org/rfc/rfc7662",
+    "https://www.rfc-editor.org/rfc/rfc9449",
+    "https://www.rfc-editor.org/rfc/rfc8705"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [],
+  "tags": [
+    "access-token",
+    "jwt",
+    "introspection",
+    "dpop",
+    "mtls"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:resource-servers-own-access-token-validation",
+    "adr:token-claims-are-validated-authority-inputs-not-permissions",
+    "adr:sender-constrained-token-policy-is-explicit"
+  ]
+}

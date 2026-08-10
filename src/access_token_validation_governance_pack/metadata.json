@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "ssot_package_name": "access-token-validation-governance-pack",
+  "origin": {
+    "id": "pack:access-token-validation",
+    "package_name": "access-token-validation-governance-pack",
+    "import_name": "access_token_validation_governance_pack",
+    "kind": "governance-pack",
+    "title": "Access Token Validation Governance",
+    "description": "Governance for resource-server validation of JWT and opaque access tokens, introspection, revocation, caching, mTLS, DPoP, policy-context mapping, failure, and audit evidence.",
+    "homepage": "https://github.com/groupsum/access-token-validation-governance-pack",
+    "repository": "https://github.com/groupsum/access-token-validation-governance-pack"
+  },
+  "compatibility": {
+    "python": ">=3.10,<3.15",
+    "ssot_registry_schema": ">=0.4.0",
+    "ssot_pack_contract": ">=0.2.17,<0.3.0"
+  },
+  "trust": {
+    "trusted_by_default": false,
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:access-token-validation-governance-pack"
+  },
+  "documents": {
+    "adr": {
+      "manifest_path": "templates/adr/manifest.json"
+    },
+    "spec": {
+      "manifest_path": "templates/specs/manifest.json"
+    }
+  }
+}

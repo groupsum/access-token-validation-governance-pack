@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "spec",
+  "id": "spc:mtls-and-dpop-sender-constraint-contract",
+  "number": 2003,
+  "slug": "mtls-and-dpop-sender-constraint-contract",
+  "title": "mTLS And DPoP Sender Constraint Contract",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "summary": "Defines mTLS and DPoP proof validation.",
+  "body": "## Requirements\n\n- Bind the access token to the presented certificate or proof key.\n- Validate DPoP method, URI, time, nonce, and replay identifier.\n- Reject bearer use of sender-constrained tokens.",
+  "decision_date": "2026-08-10",
+  "references": [
+    "https://www.rfc-editor.org/rfc/rfc9068",
+    "https://www.rfc-editor.org/rfc/rfc7662",
+    "https://www.rfc-editor.org/rfc/rfc9449",
+    "https://www.rfc-editor.org/rfc/rfc8705"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [],
+  "tags": [
+    "access-token",
+    "jwt",
+    "introspection",
+    "dpop",
+    "mtls"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:resource-servers-own-access-token-validation",
+    "adr:token-claims-are-validated-authority-inputs-not-permissions",
+    "adr:sender-constrained-token-policy-is-explicit"
+  ]
+}

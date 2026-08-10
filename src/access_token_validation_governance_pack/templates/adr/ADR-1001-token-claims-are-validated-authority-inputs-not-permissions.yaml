@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "adr",
+  "id": "adr:token-claims-are-validated-authority-inputs-not-permissions",
+  "number": 1001,
+  "slug": "token-claims-are-validated-authority-inputs-not-permissions",
+  "title": "Token Claims Are Validated Authority Inputs Not Permissions",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "summary": "Validated token claims constrain delegated authority but do not directly decide resource access.",
+  "body": "Validated token claims constrain delegated authority but do not directly decide resource access.",
+  "decision_date": "2026-08-10",
+  "references": [
+    "https://www.rfc-editor.org/rfc/rfc9068",
+    "https://www.rfc-editor.org/rfc/rfc7662",
+    "https://www.rfc-editor.org/rfc/rfc9449",
+    "https://www.rfc-editor.org/rfc/rfc8705"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [],
+  "tags": [
+    "access-token",
+    "jwt",
+    "introspection",
+    "dpop",
+    "mtls"
+  ]
+}

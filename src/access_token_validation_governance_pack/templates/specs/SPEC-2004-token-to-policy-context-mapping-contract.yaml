@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "spec",
+  "id": "spc:token-to-policy-context-mapping-contract",
+  "number": 2004,
+  "slug": "token-to-policy-context-mapping-contract",
+  "title": "Token To Policy Context Mapping Contract",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "summary": "Defines validated token output supplied to policy evaluation.",
+  "body": "## Requirements\n\n- Map only validated claims into typed policy inputs.\n- Keep issuer, audience, client, subject, scope, and assurance provenance.\n- Do not invent roles or permissions from ungoverned claim names.",
+  "decision_date": "2026-08-10",
+  "references": [
+    "https://www.rfc-editor.org/rfc/rfc9068",
+    "https://www.rfc-editor.org/rfc/rfc7662",
+    "https://www.rfc-editor.org/rfc/rfc9449",
+    "https://www.rfc-editor.org/rfc/rfc8705"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [],
+  "tags": [
+    "access-token",
+    "jwt",
+    "introspection",
+    "dpop",
+    "mtls"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:resource-servers-own-access-token-validation",
+    "adr:token-claims-are-validated-authority-inputs-not-permissions",
+    "adr:sender-constrained-token-policy-is-explicit"
+  ]
+}

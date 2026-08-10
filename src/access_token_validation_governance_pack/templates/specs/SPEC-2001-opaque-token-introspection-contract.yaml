@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "spec",
+  "id": "spc:opaque-token-introspection-contract",
+  "number": 2001,
+  "slug": "opaque-token-introspection-contract",
+  "title": "Opaque Token Introspection Contract",
+  "status": "accepted",
+  "origin": "extension-pack",
+  "summary": "Defines opaque-token introspection and active-state handling.",
+  "body": "## Requirements\n\n- Authenticate the resource server to the introspection endpoint.\n- Require active status and validate returned issuer, audience, scope, subject, and time.\n- Treat unavailable or invalid introspection as denial.",
+  "decision_date": "2026-08-10",
+  "references": [
+    "https://www.rfc-editor.org/rfc/rfc9068",
+    "https://www.rfc-editor.org/rfc/rfc7662",
+    "https://www.rfc-editor.org/rfc/rfc9449",
+    "https://www.rfc-editor.org/rfc/rfc8705"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [],
+  "tags": [
+    "access-token",
+    "jwt",
+    "introspection",
+    "dpop",
+    "mtls"
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:resource-servers-own-access-token-validation",
+    "adr:token-claims-are-validated-authority-inputs-not-permissions",
+    "adr:sender-constrained-token-policy-is-explicit"
+  ]
+}
